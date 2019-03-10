@@ -1,24 +1,34 @@
-$(document).ready(function(){
-	$(".mySlides").css("display","none");
-    $("#myFirstDiv").show();  
-      $("#new").fadeIn();  
-});
-
-
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
+function displayImage(event) {
+  event = event || window.event;
+  var targetElement = event.target || event.srcElement
+  if (targetElement.tagName == 'IMG') {
+    document.getElementById('showImage').src = targetElement.getAttribute('src')
+  }else{
+    return;
   }
-  x[slideIndex-1].style.display = "block";  
 }
+
+
+
+
+// carousal image with next previous image
+
+function changeImage(value){
+  if(value == '-'){
+    if (i < imageArray.length){
+        i = i+1
+    }else{
+        i = 1
+    }
+  }else{
+    if (i < imageArray.length + 1 && i >1){
+      i = i-1
+  }else{
+      i = imageArray.length
+  }
+  }
+    sliderContent.innerHTML = '<img src= '+imageArray[i-1]+'>'
+}
+
+// owl carousal
+

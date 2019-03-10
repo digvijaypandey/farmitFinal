@@ -35,3 +35,39 @@
 }
 
 
+.productDetails img{
+    width: 60px;
+    height: 60px;
+    border: 1px solid;
+    margin: 0px;
+}
+
+.productDetails1 img{
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+    margin: 0px;
+}
+
+.productDetails img:hover{
+    opacity:.5;
+    cursor: pointer
+}
+
+
+
+
+
+
+
+
+
+#owl-demo .item{
+    margin: 3px;
+  }
+  #owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+

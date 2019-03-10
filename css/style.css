@@ -161,9 +161,9 @@ li {
 }
 footer .icon li{
     display: inline-block;
-    color: #029494;
-    background-color:#fff;
-    margin: 0px 9px
+    color: #fff;
+    /* background-color:#fff; */
+    margin: 0px 9px;
 }
 footer li a{
     color:#fff;
