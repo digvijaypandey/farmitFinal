@@ -1,5 +1,4 @@
-
-.imageBtn-left{
+.imageBtn-left {
     /* position: absolute;
     top: 100%;
     margin-left: -6px; */
@@ -13,7 +12,8 @@
     cursor: pointer;
     border-radius: 5px;
 }
-.imageBtn-right{
+
+.imageBtn-right {
     /* position: absolute;
     top: 104%;
     margin-left: -29px;
@@ -28,46 +28,94 @@
     border-radius: 5px;
 }
 
-
-.mySlides{
+.mySlides {
     width: 350px;
-    height:300px;
+    height: 300px;
 }
 
-
-.productDetails img{
+.productDetails img {
     width: 60px;
     height: 60px;
     border: 1px solid;
     margin: 0px;
 }
 
-.productDetails1 img{
+.productDetails1 img {
     width: 200px;
     height: 200px;
     border: 1px solid;
     margin: 0px;
 }
 
-.productDetails img:hover{
-    opacity:.5;
+.productDetails img:hover {
+    opacity: .5;
     cursor: pointer
 }
 
-
-
-
-
-
-
-
-
-#owl-demo .item{
+#owl-demo .item {
     margin: 3px;
-  }
-  #owl-demo .item img{
+}
+
+#owl-demo .item img {
     display: block;
     width: 100%;
     height: auto;
-  }
+}
 
+
+/* carousal css */
+
+.es-carousel-wrapper {
+    background: #101010;
+    padding: 10px 27px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    position: relative;
+    -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.9);
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.9);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.9);
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.es-carousel {
+    overflow: hidden;
+    background: #000;
+}
+
+.es-carousel ul {
+    display: none;
+}
+
+.es-carousel ul li {
+    height: 100%;
+    float: left;
+    display: block;
+}
+
+.es-carousel ul li a {
+    display: block;
+    border-style: solid;
+    border-color: #222;
+    opacity: 0.8;
+    -webkit-touch-callout: none;
+    /* option */
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.es-carousel ul li.selected a {
+    border-color: #fff;
+    opacity: 1.0;
+}
+
+.es-carousel ul li a img {
+    display: block;
+    border: none;
+    max-height: 100%;
+    max-width: 100%;
+}
