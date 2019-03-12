@@ -68,136 +68,97 @@
         <div class="col">
             <div class="row">
                 <div class="col-sm-1 productDetails" id='dispalyImgDiv' onclick='displayImage(event)'>
-                    <img src="../images/bags/bag1.jpg">
-                    <img src="../images/bags/bag2.jpg">
-                    <img src="../images/bags/bag3.jpg">
-                    <img src="../images/bags/bag4.jpg">
-                    <img src="../images/bags/bag5.jpg">
+                    <img id='image1' src="../images/bags/bag1.jpg">
+                    <img id='image2' src="../images/bags/bag2.jpg">
+                    <img id='image3' src="../images/bags/bag3.jpg">
+                    <img id='image4' src="../images/bags/bag4.jpg">
                 </div>
                 <div class="col-sm-4">
                     <img src="../images/bags/bag1.jpg" style="height: 300px;border: 1px solid;min-width: 318px;" id='showImage'>
                 </div>
                 <div class="col-sm-5">
                     <h5>Details</h5>
+                    <p id='discription'>test comes here</p>
+
                 </div>
             </div>
         </div>
 
         <!-- // carousal image with next previous image -->
-        <div class="col">
+        <!-- <div class="col">
             <div class="row" id='slider'>
                 <button class="btn btn-primary" value='-' onclick="changeImage(event.target.value)"><i
                         class="fa fa-caret-left"></i></button>
 
-                <div class="productDetails1  es-carousel" id='box'>
-                    <ul>
-                        <li>
-                            <a href="#"><img src="../images/bags/bag1.jpg"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="../images/bags/bag1.jpg"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="../images/bags/bag1.jpg"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="../images/bags/bag1.jpg"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="../images/bags/bag1.jpg"></a>
-                        </li>
-                    </ul>
+                <div class="productDetails1" id='box'>
+                    <div>
+                        <a href="#"><img src="../images/bags/bag1.jpg"></a>
+
+                        <a href="#"><img src="../images/bags/bag2.jpg"></a>
+
+                        <a href="#"><img src="../images/bags/bag3.jpg"></a>
+
+                        <a href="#"><img src="../images/bags/bag4.jpg"></a>
+
+                        <a href="#"><img src="../images/bags/bag5.jpg"></a>
+
+                        <a href="#"><img src="../images/bags/bag1.jpg"></a>
+
+                        <a href="#"><img src="../images/bags/bag2.jpg"></a>
+
+                        <a href="#"><img src="../images/bags/bag3.jpg"></a>
+
+                        <a href="#"><img src="../images/bags/bag4.jpg"></a>
+
+                        <a href="#"><img src="../images/bags/bag5.jpg"></a>
+                    </div>
+
                 </div>
                 <button class="btn btn-primary" value='+' onclick="changeImage(event.target.value)"><i
                         class="fa fa-caret-right"></i>
                 </button>
 
             </div>
-        </div>
-
-
-
-        <!-- <div id="owl-demo" class="productDetails1">
-
-            <img src="../images/bags/bag1.jpg">
-            <img src="../images/bags/bag2.jpg">
-            <img src="../images/bags/bag3.jpg">
-            <img src="../images/bags/bag4.jpg">
-            <img src="../images/bags/bag5.jpg">
-            <img src="../images/bags/bag1.jpg">
-            <img src="../images/bags/bag2.jpg">
-            <img src="../images/bags/bag3.jpg">
-            <img src="../images/bags/bag4.jpg">
-            <img src="../images/bags/bag5.jpg">
-
         </div> -->
 
 
 
 
 
-        <!-- thumbnail carousal -->
 
         <!-- <div class="col">
             <div class="row">
-                <div class="col-sm-1 productDetails">
-                    <img src="../images/bags/bag1.jpg" id='carousalImgDiv'>
+                <div class="col-sm-1 productDetails" id='dispalyImgDiv' onclick='displayImage(event)'>
+                    <img id='image1' src="../images/bags/bag1.jpg">
+                    <img id='image2' src="../images/bags/bag2.jpg">
+                    <img id='image3' src="../images/bags/bag3.jpg">
+                    <img id='image4' src="../images/bags/bag4.jpg">
                 </div>
-                <button onclick="carousalImage()">display</button>
+                <div class="col-sm-4">
+                    <img src="../images/bags/bag1.jpg" style="height: 300px;border: 1px solid;min-width: 318px;" id='showImage'>
+                </div>
                 <div class="col-sm-5">
                     <h5>Details</h5>
+                    <p id='discription'>test comes here</p>
+
                 </div>
             </div>
         </div> -->
+        <button class="btn btn-primary" value='Display Image' onclick="displayImageFromArray()">Display Image</button>
+
 
 
 
     </div>
 
 
-    <!-- carousal image with next previous image -->
-    <script>
-        var sliderContent = document.getElementById('box')
-        var imageArray = ['../images/bags/bag2.jpg', '../images/bags/bag3.jpg', '../images/bags/bag4.jpg', '../images/bags/bag5.jpg']
-        var i = imageArray.length
-    </script>
-
-    <script>
-        $(document).ready(function() {
-
-            $("#owl-demo").owlCarousel({
-
-                autoPlay: 3000, //Set AutoPlay to 3 seconds
-
-                items: 4,
-                itemsDesktop: [1199, 3],
-                itemsDesktopSmall: [979, 3]
-
-            });
-
-        });
-    </script>
 
 
 
-    <script>
-        $('.owl-carousel').owlCarousel({
-            loop: true,
-            margin: 10,
-            nav: true,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 3
-                },
-                1000: {
-                    items: 5
-                }
-            }
-        })
-    </script>
+
+
+
+
 
     <!-- <script>
         var images = document.getElementById('carousalImgDiv');
