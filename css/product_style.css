@@ -39,6 +39,18 @@
     border: 1px solid;
     margin: 0px;
 }
+.productDetails2 img {
+    width: 60px;
+    height: 60px;
+    border: 1px solid;
+    margin: 0px;
+}
+
+
+.productDetails2{
+    margin-left: 110px;
+    margin-top: 30px;
+}
 
 .productDetails1 img {
     width: 200px;

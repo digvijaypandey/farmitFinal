@@ -4,15 +4,15 @@
 <head>
 
     <!-- carousal tumbnail style and js -->
-    <link rel="stylesheet" type="text/css" href='../ResponsiveImageGallery/css/demo.css'>
+    <!-- <link rel="stylesheet" type="text/css" href='../ResponsiveImageGallery/css/demo.css'>
     <link rel="stylesheet" type="text/css" href='../ResponsiveImageGallery/css/elastislide.css'>
     <link rel="stylesheet" type="text/css" href='../ResponsiveImageGallery/css/reset.css'>
-    <link rel="stylesheet" type="text/css" href='../ResponsiveImageGallery/css/style.css'>
+    <link rel="stylesheet" type="text/css" href='../ResponsiveImageGallery/css/style.css'> -->
 
-    <script src="../ResponsiveImageGallery/js/gallery.js"></script>
-    <script src="../ResponsiveImageGallery/js/jquery.easing.1.3.js"></script>
+    <!-- <script src="../ResponsiveImageGallery/js/gallery.js"></script> -->
+    <!-- <script src="../ResponsiveImageGallery/js/jquery.easing.1.3.js"></script>
     <script src="../ResponsiveImageGallery/js/jquery.elastislide.js"></script>
-    <script src="../ResponsiveImageGallery/js/jquery.tmpl.min.js"></script>
+    <script src="../ResponsiveImageGallery/js/jquery.tmpl.min.js"></script> -->
 
     <!-- end carousal tumbnail -->
 
@@ -72,9 +72,10 @@
                     <img id='image2' src="../images/bags/bag2.jpg">
                     <img id='image3' src="../images/bags/bag3.jpg">
                     <img id='image4' src="../images/bags/bag4.jpg">
+                    <img id='image5' src="../images/bags/bag5.jpg">
                 </div>
                 <div class="col-sm-4">
-                    <img src="../images/bags/bag1.jpg" style="height: 300px;border: 1px solid;min-width: 318px;" id='showImage'>
+                    <img src="" style="height: 300px;border: 1px solid;min-width: 318px;" id='showImage'>
                 </div>
                 <div class="col-sm-5">
                     <h5>Details</h5>
@@ -144,8 +145,15 @@
                 </div>
             </div>
         </div> -->
-        <button class="btn btn-primary" value='Display Image' onclick="displayImageFromArray()">Display Image</button>
-
+         <div class ="row">
+            
+            <div class="col-sm-8 productDetails2" id='dispalyImgDiv'>
+                    <img id='1' src="" onclick="displayImageFromArray(event.target.id)">
+                    <img id='2' src="" onclick="displayImageFromArray(event.target.id)">
+                    <img id='3' src="" onclick="displayImageFromArray(event.target.id)">
+                    <img id='4' src="" onclick="displayImageFromArray(event.target.id)">
+                </div>
+        </div>
 
 
 
