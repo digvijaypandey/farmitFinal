@@ -1,65 +1,72 @@
-.imageBtn-left {
-    /* position: absolute;
-    top: 100%;
-    margin-left: -6px; */
-    /* transform: translate(12%, -5%); */
-    /* -ms-transform: translate(-50%, -50%); */
-    background-color: #555;
-    color: white;
-    /* font-size: 16px; */
-    padding: 12px 24px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.imageBtn-right {
-    /* position: absolute;
-    top: 104%;
-    margin-left: -29px;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%); */
-    background-color: #555;
-    color: white;
-    font-size: 16px;
-    padding: 12px 24px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.mySlides {
-    width: 350px;
-    height: 300px;
-}
 
 .productDetails img {
-    width: 60px;
-    height: 60px;
-    border: 1px solid;
-    margin: 0px;
+  width: 90px;
+  height: 80px;
+  border: 1px solid;
+  /* margin: 10px; */
 }
 .productDetails2 img {
-    width: 60px;
-    height: 60px;
-    border: 1px solid;
-    margin: 0px;
+  width: 273px;
+  height: 273px;
+  border: 1px solid;
+  margin: 0px;
+  cursor: pointer;
+}
+.productDetails2 img:hover{
+  /* filter:blur(5px);
+  border:1px solid black; */
 }
 
 
 .productDetails2{
-    margin-left: 110px;
-    margin-top: 30px;
+  margin-left: 13px;
+  margin-top: 30px;
 }
 
 .productDetails1 img {
-    width: 200px;
-    height: 200px;
-    border: 1px solid;
-    margin: 0px;
+  width: 200px;
+  height: 200px;
+  border: 1px solid;
+  margin: 0px;
 }
 
 .productDetails img:hover {
-    opacity: .5;
-    cursor: pointer
+  opacity: .5;
+  cursor: pointer
+}
+
+
+
+
+
+
+
+
+
+_______________________________________
+
+
+ /* Product Description */
+ .product-description {
+  border-bottom: 1px solid #E1E8EE;
+  margin-bottom: 20px;
+}
+.product-description span {
+  font-size: 12px;
+  color: #358ED7;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.product-description h1 {
+  font-weight: 300;
+  font-size: 52px;
+  color: #43484D;
+  letter-spacing: -2px;
+}
+.product-description p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #86939E;
+  line-height: 24px;
 }

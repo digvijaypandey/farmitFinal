@@ -5,7 +5,7 @@ const array = [
         { src: '../images/bags/bag7.jpg' },
         { src: '../images/bags/bag8.jpg' }
         ],
-        discription: 'discription'
+        discription: { head: 'discription', name: 'Bag', details: 'The preferred choice of a vast test of acclaimed DJs.dsfg, bass-focused sound and high isolation. Sturdy headband and on-ear cushions suitable descriptionperformance' }
     }, {
         imageArray: [{ src: '../images/bags/bag1.jpg' },
         { src: '../images/bags/bag2.jpg' },
@@ -13,7 +13,7 @@ const array = [
         { src: '../images/bags/bag4.jpg' },
         { src: '../images/bags/bag5.jpg' }
         ],
-        discription: 'discription1'
+        discription: { head: 'discription', name: 'Bag1', details: 'The preferred choice of a vast test of acclaimed DJs. Punchy, 124234ocused sound and high isolation. Sturdy headband and on-ear cushions suitable for live performance' }
     }, {
         imageArray: [{ src: '../images/bags/bag5.jpg' },
         { src: '../images/bags/bag6.jpg' },
@@ -21,7 +21,8 @@ const array = [
         { src: '../images/bags/bag7.jpg' },
         { src: '../images/bags/bag8.jpg' }
         ],
-        discription: 'discription2'
+        discription: { head: 'discription', name: 'Bag2', details: 'The preferred choice of a vast test of acclaimed DJs. Punchy, bass-focused sound and high isolation. Sturdy headband and on-ear hellos suitable for live performance' }
+
     }, {
         imageArray: [{ src: '../images/bags/bag6.jpg' },
         { src: '../images/bags/bag7.jpg' },
@@ -29,7 +30,8 @@ const array = [
         { src: '../images/bags/bag1.jpg' },
         { src: '../images/bags/bag4.jpg' }
         ],
-        discription: 'discription3'
+        discription: { head: 'discription', name: 'Bag3', details: 'The preferred choice odummy datat of acclaimed DJs. Punchy, bass-focused sound and high isolation. Sturdy headband and on-ear cushions suitable for live performance' }
+
     }, {
         imageArray: [{ src: '../images/bags/bag8.jpg' },
         { src: '../images/bags/bag3.jpg' },
@@ -37,23 +39,26 @@ const array = [
         { src: '../images/bags/bag1.jpg' },
         { src: '../images/bags/bag5.jpg' }
         ],
-        discription: 'discription4'
+        discription: { head: 'discription', name: 'Bag4', details: 'The preferred choice of a vast test of acclaimed DJs. Punchy, bass-focused sound and high isolation. Sturdy headband and on-ear cushions suitable for live performance' }
+
     }]
 
 var bottmThumbData = [];
 
 
-    array.forEach(function (bottmThumb, bottominsex) {
+array.forEach(function (bottmThumb, bottominsex) {
 
-        bottmThumbData.push(bottmThumb.imageArray[0])
-        console.log(bottmThumbData)
-    })
+    bottmThumbData.push(bottmThumb.imageArray[0])
+    console.log(bottmThumbData)
+
+})
 
 
 $(document).ready(function () {
-
-
-    for (i = 1; i < bottmThumbData.length ; i++) {
+for (i = 1; i < bottmThumbData.length; i++) {
+    document.getElementById('head').innerHTML = array[1].discription.head;
+    document.getElementById('name').innerHTML = array[1].discription.name;
+    document.getElementById('details').innerHTML = array[1].discription.details;
         document.getElementById(i).src = bottmThumbData[i].src
         // document.getElementById(i).src = '../images/bags/bag' + i + '.jpg'
 
@@ -76,7 +81,6 @@ function displayImage(event) {
 // on click display image and description
 
 function displayImageFromArray(value) {
-    debugger
     var curImage = document.getElementById('showImage');
     var sideThumbnail = []
     this.sideThumbnail = ''
@@ -88,7 +92,9 @@ function displayImageFromArray(value) {
 
         for (i = 0; i < array.length; i++) {
             if (value == i) {
-                document.getElementById('discription').innerHTML = array[i].discription;
+                document.getElementById('head').innerHTML = array[i].discription.head;
+                document.getElementById('name').innerHTML = array[i].discription.name;
+                document.getElementById('details').innerHTML = array[i].discription.details;
 
                 array[i].imageArray.forEach(function (element, elementIndex) {
                     sideThumbnail.push(element)
@@ -190,3 +196,18 @@ function changeImage(value) {
     }
     sliderContent.innerHTML = '<img src= ' + imageArray[i - 1].imagePath + '>'
 }
+
+
+
+
+$(document).ready(function () {
+
+    $('.color-choose input').on('click', function () {
+        var headphonesColor = $(this).attr('data-image');
+
+        $('.active').removeClass('active');
+        $('.left-column img[data-image = ' + headphonesColor + ']').addClass('active');
+        $(this).addClass('active');
+    });
+
+});

@@ -10,12 +10,14 @@
     <title>HALIOES Backpack</title>
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/flickity.css">
     <link href="fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Bootstrap core JavaScript -->
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/flickity.pkgd.min.js"></script>
     <script src="js/jquery/jquery.js"></script>
     <script src="js/jquery/jquery.min.js"></script>
 
@@ -56,6 +58,8 @@
             </div>
         </div>
     </nav>
+
+
 
 
     <div class="hedderBanner mt-5">
@@ -152,7 +156,7 @@
                 </div>
             </div>
             <hr>
-           
+
         </div>
     </div>
 
@@ -189,10 +193,10 @@
                         <div class="col-6">
                             <button class="btn bt-lg btn-primary btn-block">Buy Now</button>
                         </div>
-                        <div class="col-6 showFeature">
+                        <div class="col-6 showFeature" style="display: none">
                             <button class="btn bt-lg btn-primary btn-block">Fetures</button>
                         </div>
-                        <div class="col-6 closeFeature" style="display: none">
+                        <div class="col-6 closeFeature">
                             <button class="btn bt-lg btn-primary btn-block">Close
                                 Fetures</button>
                         </div>
@@ -227,7 +231,8 @@
                                                             <label class="btn btn-secondary active"
                                                                 onclick="selectColor(event.target.outerText)"
                                                                 value='black'>
-                                                                <input type="radio" name="options" autocomplete="off"> Black
+                                                                <input type="radio" name="options" autocomplete="off">
+                                                                Black
                                                             </label>
                                                             <label class="btn btn-secondary"
                                                                 onclick="selectColor(event.target.outerText)"
@@ -360,6 +365,9 @@
                 </div>
             </div>
         </div>
+
+
+
     </div>
 
 
