@@ -31,38 +31,39 @@
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark fixed-top" style="background-color: #029494;">
-        <div class="container">
-            <a class="navbar-brand" href="index.html"></a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html"><i class="fa fa-home"></i> Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="html/about.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="html/product.html">Products</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="html/contact.html">Contact Us</a>
-                    </li>
-                </ul>
+    <div id="topheader">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark fixed-top" style="background-color: #029494;">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"></a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                    data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html"> Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="html/about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="html/product.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="html/contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-
+        </nav>
+    </div>
 
 
 
     <div class="hedderBanner mt-5">
+
         <div class="text-center">
             <h3 data-animation="animated bounceInLeft">
                 <lable class="hedderBanner_content_1">new special collection</lable>
@@ -79,8 +80,12 @@
                 </lable>
             </div>
         </div>
-        <button type="button" value="Explore" class="btn btn-primary">Explore</button>
+        <div class="explore">
+            <span class="text-center col-sm-3">Explore <i class="fa fa-angle-right"></i> </span>
+        </div>
     </div>
+
+
 
 
 
@@ -94,7 +99,7 @@
         <!-- Page Content -->
         <hr>
         <div class="container feature">
-            <h4 class="" style="text-transform: uppercase; color: #029494">Features</h4>
+            <h4 style="text-transform: uppercase; color: #029494">Features</h4>
             <div class="row">
                 <div class="col-lg-4 mb-4">
                     <div class="card h-100">
@@ -155,8 +160,38 @@
                     </div>
                 </div>
             </div>
-            <hr>
 
+        </div>
+    </div>
+
+
+    <div class="mt-5">
+        <div class="byFeature mt-4">
+            <h4 style="color:#029494">
+                OUR PRODUCTS
+            </h4>
+        </div>
+        <div class="carousel js-flickity">
+
+            <div class="carousel-cell">
+                <img id='image1' src="images/bags/bag1.jpg">
+                <img id='image2' src="images/bags/bag2.jpg">
+            </div>
+            <div class="carousel-cell">
+                <img id='image3' src="images/bags/bag3.jpg">
+                <img id='image1' src="images/bags/bag4.jpg">
+            </div>
+            <div class="carousel-cell">
+                <img id='image2' src="images/bags/bag5.jpg">
+                <img id='image3' src="images/bags/bag6.jpg">
+
+
+            </div>
+            <div class="carousel-cell">
+
+                <img id='image2' src="images/bags/bag7.jpg">
+                <img id='image3' src="images/bags/bag8.jpg">
+            </div>
         </div>
     </div>
 
@@ -191,7 +226,7 @@
                     </div>
                     <div class="row">
                         <div class="col-6">
-                            <button class="btn bt-lg btn-primary btn-block">Buy Now</button>
+                            <button class="btn bt-lg btn-primary btn-block" href="html/product.html">Buy Now</button>
                         </div>
                         <div class="col-6 showFeature" style="display: none">
                             <button class="btn bt-lg btn-primary btn-block">Fetures</button>
@@ -596,7 +631,6 @@
             </div>
         </div>
     </div>
-
 
 </body>
 

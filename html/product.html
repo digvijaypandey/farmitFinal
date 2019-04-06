@@ -33,32 +33,34 @@
 
 <body>
     <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark fixed-top" style="background-color: #029494;">
-        <div class="container">
-            <a class="navbar-brand" href="../index.html"></a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="../index.html"><i class="fa fa-home"></i> Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../html/about.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../html/product.html">Products</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../html/contact.html">Contact Us</a>
-                    </li>
-                </ul>
+    <div id="topheader">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark fixed-top" style="background-color: #029494;">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html"></a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                    data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html"> Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/about.html">About Us</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../html/product.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
 
 
 
@@ -104,43 +106,217 @@
 
 
 
-
-    <div class="container mt-5">
-        <div class="col">
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="row">
-                        <div class="col-sm-2 productDetails" id='dispalyImgDiv' onclick='displayImage(event)'>
-                            <img id='image1' src="../images/bags/bag1.jpg">
-                            <img id='image2' src="../images/bags/bag2.jpg">
-                            <img id='image3' src="../images/bags/bag3.jpg">
-                            <img id='image4' src="../images/bags/bag4.jpg">
-                            <img id='image5' src="../images/bags/bag5.jpg">
-                        </div>
-                        <div class="col-sm-10">
-                            <img src="" style="height: 400px; width:100%" id='showImage'>
+    <div class="card">
+        <div class="container mt-5">
+            <div class="col">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="row">
+                            <div class="col-sm-2 productDetails" id='dispalyImgDiv' onclick='displayImage(event)'>
+                                <img id='image1' src="../images/bags/bag1.jpg">
+                                <img id='image2' src="../images/bags/bag2.jpg">
+                                <img id='image3' src="../images/bags/bag3.jpg">
+                                <img id='image4' src="../images/bags/bag4.jpg">
+                                <img id='image5' src="../images/bags/bag5.jpg">
+                            </div>
+                            <div class="col-sm-10">
+                                <img src="" style="height: 400px; width:100%" id='showImage'>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-5 product-description">
-                    <span id='head'></span>
-                    <h1 id='name'></h1>
-                    <p id='details'></p>
-                    <!-- <button class="btn bt-lg btn-primary btn-block">Buy Now</button> -->
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <button class="btn bt-lg btn-primary btn-block">Buy Now</button>
+                    <div class="col-sm-5 product-description">
+                        <span id='head'></span>
+                        <h1 id='name'></h1>
+                        <p id='details'></p>
+                       
+                        <!-- <button class="btn bt-lg btn-primary btn-block">Buy Now</button> -->
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <button class="btn bt-lg btn-primary btn-block">Buy Now</button>
+                            </div>
+                            <div class="col-sm-6 showFeature" style="display: none">
+                                <button class="btn bt-lg btn-primary btn-block">Know more</button>
+                            </div>
+                            <div class="col-6 closeFeature">
+                                <button class="btn bt-lg btn-primary btn-block">Close Fetures</button>
+                            </div>
                         </div>
-                        <div class="col-sm-6">
-                            <button class="btn bt-lg btn-primary btn-block">Know more</button>
+                    </div>
+                    <hr>
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <div class="col-sm-12 bydescription ml-3 mt-4 mb-4" id='style-2'>
+                                <h5>Specifications:</h5>
+                                <div class="row">
+                                    <!-- <div class="col-sm-3 form-group">
+                                                    <label>Model Number</label>
+                                                </div>
+                                                <div class="col-sm-3 form-group">
+                                                    <label>HS-101+</label>
+                                                </div> -->
+                                    <table class="table table-striped">
+                                        <thead class="thead-dark">
+                                            <tr>
+                                                <th scope="col">Specification</th>
+                                                <th scope="col">Description</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td style="width: 50%;" scope="col">
+                                                    <label>Color</label>
+                                                </td>
+                                                <td style="width: 50%;" scope="col">
+                                                    <label>
+                                                        <div class="col-xs-6 col-sm-4 col-md-4">
+
+                                                            <div class="btn-group btn-group-toggle"
+                                                                data-toggle="buttons">
+                                                                <label class="btn btn-secondary active"
+                                                                    onclick="selectColor(event.target.outerText)"
+                                                                    value='black'>
+                                                                    <input type="radio" name="options"
+                                                                        autocomplete="off">
+                                                                    Black
+                                                                </label>
+                                                                <label class="btn btn-secondary"
+                                                                    onclick="selectColor(event.target.outerText)"
+                                                                    value="gray">
+                                                                    <input type="radio" name="options" id="option3"
+                                                                        autocomplete="off"> Gray
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 50%;" scope="col">
+                                                    <label>Model Number</label>
+                                                </td>
+                                                <td style="width: 50%;" scope="col">
+                                                    <label>HS-101+</label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 50%;" scope="col">
+                                                    <label>Item Height</label>
+                                                </td>
+                                                <td style="width: 50%;" scope="col">
+                                                    <label>10 Centimeters</label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 50%;" scope="col">
+                                                    <label>Item Length</label>
+                                                </td>
+                                                <td style="width: 50%;" scope="col">
+                                                    <label>50 Centimeters</label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 50%;" scope="col">
+                                                    <label>Item Width</label>
+                                                </td>
+                                                <td style="width: 50%;" scope="col">
+                                                    <label>35 Centimeters</label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 50%;" scope="col">
+                                                    <label>Item Weight</label>
+                                                </td>
+                                                <td style="width: 50%;" scope="col">
+                                                    <label>1.16 Kilograms</label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 50%;" scope="col">
+                                                    <label>Material</label>
+                                                </td>
+                                                <td style="width: 50%;" scope="col">
+                                                    <label>Polyester</label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 50%;" scope="col">
+                                                    <label>Special Features</label>
+                                                </td>
+                                                <td style="width: 50%;" scope="col">
+                                                    <label>Antitheft TSA Combination Lock, USB Charging & AUX Output,
+                                                        Hidden
+                                                        Compartments for Valuables, Durable & Sturdy Design, Laptop
+                                                        Compartment,
+                                                        Back Padding, Water Bottle / Umbrella Pouch, Inner Mesh Pocket,
+                                                        Shoulder
+                                                        Strap, 180° Opening</label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 50%;" scope="col">
+                                                    <label>Closure</label>
+                                                </td>
+                                                <td style="width: 50%;" scope="col">
+                                                    <label>Zipper</label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 50%;" scope="col">
+                                                    <label>Inner Material</label>
+                                                </td>
+                                                <td style="width: 50%;" scope="col">
+                                                    <label>Polyester</label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 50%;" scope="col">
+                                                    <label>Strap</label>
+                                                </td>
+                                                <td style="width: 50%;" scope="col">
+                                                    <label>Adjustable</label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 50%;" scope="col">
+                                                    <label>Water Resistance</label>
+                                                </td>
+                                                <td style="width: 50%;" scope="col">
+                                                    <label>Water Resistant</label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 50%;" scope="col">
+                                                    <label>Warranty Description</label>
+                                                </td>
+                                                <td style="width: 50%;" scope="col">
+                                                    <label>12 Months Limited Period Warranty against manufacturing
+                                                        defects,
+                                                        No
+                                                        wear & tear is covered
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 50%;" scope="col">
+                                                    <label>Warranty Type</label>
+                                                </td>
+                                                <td style="width: 50%;" scope="col">
+                                                    <label>Manufacturer</label>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                 </div>
 
             </div>
-
         </div>
+
+
 
         <!-- // carousal image with next previous image -->
         <!-- <div class="col">
@@ -202,18 +378,29 @@
                 </div>
             </div>
         </div> -->
-        <div class="row">
-            <div class="col-sm-12 productDetails2" id='dispalyImgDiv'>
-                <img id='1' src="" onclick="displayImageFromArray(event.target.id)">
-                <img id='2' src="" onclick="displayImageFromArray(event.target.id)">
-                <img id='3' src="" onclick="displayImageFromArray(event.target.id)">
-                <img id='4' src="" onclick="displayImageFromArray(event.target.id)">
+    </div>
+
+    <div class="mt-4 card">
+        <div class="container mt-5">
+                <div class="byFeature">
+                        <h4 style="color:#029494">
+                            NEW PRODUCTS
+                        </h4>
+                    </div>
+            <div class="row">
+                <div class="col-sm-12 productDetails2" id='dispalyImgDiv'>
+                    <img id='1' src="" onclick="displayImageFromArray(event.target.id)">
+                    <img id='2' src="" onclick="displayImageFromArray(event.target.id)">
+                    <img id='3' src="" onclick="displayImageFromArray(event.target.id)">
+                    <img id='4' src="" onclick="displayImageFromArray(event.target.id)">
+                </div>
             </div>
         </div>
-
-
-
     </div>
+
+
+
+
 
 
 

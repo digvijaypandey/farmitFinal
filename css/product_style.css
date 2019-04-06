@@ -70,3 +70,14 @@ _______________________________________
   color: #86939E;
   line-height: 24px;
 }
+
+
+
+.bydescription{
+  /* border-image-slice: 20; */
+  border: 2px solid #029494;
+  padding: 5px;
+  max-height: 100% !important;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
