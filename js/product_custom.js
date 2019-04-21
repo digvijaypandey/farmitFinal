@@ -1,52 +1,51 @@
-const array = [
-    {
-        imageArray: [{ src: '../images/bags/bag5.jpg' },
+const array = [{
+    imageArray: [{ src: '../images/bags/bag5.jpg' },
         { src: '../images/bags/bag6.jpg' },
         { src: '../images/bags/bag7.jpg' },
         { src: '../images/bags/bag8.jpg' }
-        ],
-        discription: { head: 'discription', name: 'Bag', details: 'The preferred choice of a vast test of acclaimed DJs.dsfg, bass-focused sound and high isolation. Sturdy headband and on-ear cushions suitable descriptionperformance' }
-    }, {
-        imageArray: [{ src: '../images/bags/bag1.jpg' },
+    ],
+    description: { head: 'description', name: 'Bag', details: 'The preferred choice of a vast test of acclaimed DJs.dsfg, bass-focused sound and high isolation. Sturdy headband and on-ear cushions suitable descriptionperformance' }
+}, {
+    imageArray: [{ src: '../images/bags/bag1.jpg' },
         { src: '../images/bags/bag2.jpg' },
         { src: '../images/bags/bag3.jpg' },
         { src: '../images/bags/bag4.jpg' },
         { src: '../images/bags/bag5.jpg' }
-        ],
-        discription: { head: 'discription', name: 'Bag1', details: 'The preferred choice of a vast test of acclaimed DJs. Punchy, 124234ocused sound and high isolation. Sturdy headband and on-ear cushions suitable for live performance' }
-    }, {
-        imageArray: [{ src: '../images/bags/bag5.jpg' },
+    ],
+    description: { head: 'description', name: 'Bag1', details: 'The preferred choice of a vast test of acclaimed DJs. Punchy, 124234ocused sound and high isolation. Sturdy headband and on-ear cushions suitable for live performance' }
+}, {
+    imageArray: [{ src: '../images/bags/bag5.jpg' },
         { src: '../images/bags/bag6.jpg' },
         { src: '../images/bags/bag3.jpg' },
         { src: '../images/bags/bag7.jpg' },
         { src: '../images/bags/bag8.jpg' }
-        ],
-        discription: { head: 'discription', name: 'Bag2', details: 'The preferred choice of a vast test of acclaimed DJs. Punchy, bass-focused sound and high isolation. Sturdy headband and on-ear hellos suitable for live performance' }
+    ],
+    description: { head: 'description', name: 'Bag2', details: 'The preferred choice of a vast test of acclaimed DJs. Punchy, bass-focused sound and high isolation. Sturdy headband and on-ear hellos suitable for live performance' }
 
-    }, {
-        imageArray: [{ src: '../images/bags/bag6.jpg' },
+}, {
+    imageArray: [{ src: '../images/bags/bag6.jpg' },
         { src: '../images/bags/bag7.jpg' },
         { src: '../images/bags/bag3.jpg' },
         { src: '../images/bags/bag1.jpg' },
         { src: '../images/bags/bag4.jpg' }
-        ],
-        discription: { head: 'discription', name: 'Bag3', details: 'The preferred choice odummy datat of acclaimed DJs. Punchy, bass-focused sound and high isolation. Sturdy headband and on-ear cushions suitable for live performance' }
+    ],
+    description: { head: 'description', name: 'Bag3', details: 'The preferred choice odummy datat of acclaimed DJs. Punchy, bass-focused sound and high isolation. Sturdy headband and on-ear cushions suitable for live performance' }
 
-    }, {
-        imageArray: [{ src: '../images/bags/bag8.jpg' },
+}, {
+    imageArray: [{ src: '../images/bags/bag8.jpg' },
         { src: '../images/bags/bag3.jpg' },
         { src: '../images/bags/bag7.jpg' },
         { src: '../images/bags/bag1.jpg' },
         { src: '../images/bags/bag5.jpg' }
-        ],
-        discription: { head: 'discription', name: 'Bag4', details: 'The preferred choice of a vast test of acclaimed DJs. Punchy, bass-focused sound and high isolation. Sturdy headband and on-ear cushions suitable for live performance' }
+    ],
+    description: { head: 'description', name: 'Bag4', details: 'The preferred choice of a vast test of acclaimed DJs. Punchy, bass-focused sound and high isolation. Sturdy headband and on-ear cushions suitable for live performance' }
 
-    }]
+}]
 
 var bottmThumbData = [];
 
 
-array.forEach(function (bottmThumb, bottominsex) {
+array.forEach(function(bottmThumb, bottominsex) {
 
     bottmThumbData.push(bottmThumb.imageArray[0])
     console.log(bottmThumbData)
@@ -54,13 +53,13 @@ array.forEach(function (bottmThumb, bottominsex) {
 })
 
 
-$(document).ready(function () {
-for (i = 1; i < bottmThumbData.length; i++) {
-    document.getElementById('head').innerHTML = array[1].discription.head;
-    document.getElementById('name').innerHTML = array[1].discription.name;
-    document.getElementById('details').innerHTML = array[1].discription.details;
+$(document).ready(function() {
+    for (i = 1; i < bottmThumbData.length; i++) {
+        document.getElementById('head').innerHTML = array[1].description.head;
+        document.getElementById('name').innerHTML = array[1].description.name;
+        document.getElementById('details').innerHTML = array[1].description.details;
         document.getElementById(i).src = bottmThumbData[i].src
-        // document.getElementById(i).src = '../images/bags/bag' + i + '.jpg'
+            // document.getElementById(i).src = '../images/bags/bag' + i + '.jpg'
 
     }
     document.getElementById('showImage').src = '../images/bags/bag' + 1 + '.jpg'
@@ -92,14 +91,14 @@ function displayImageFromArray(value) {
 
         for (i = 0; i < array.length; i++) {
             if (value == i) {
-                document.getElementById('head').innerHTML = array[i].discription.head;
-                document.getElementById('name').innerHTML = array[i].discription.name;
-                document.getElementById('details').innerHTML = array[i].discription.details;
+                document.getElementById('head').innerHTML = array[i].description.head;
+                document.getElementById('name').innerHTML = array[i].description.name;
+                document.getElementById('details').innerHTML = array[i].description.details;
 
-                array[i].imageArray.forEach(function (element, elementIndex) {
+                array[i].imageArray.forEach(function(element, elementIndex) {
                     sideThumbnail.push(element)
                     console.log(sideThumbnail)
-                    sideThumbnail.forEach(function (sideElement, sideElementIndex) {
+                    sideThumbnail.forEach(function(sideElement, sideElementIndex) {
                         console.log(array[i].imageArray);
                         if (sideThumbnail.length <= array[i].imageArray.length) {
 
@@ -110,12 +109,10 @@ function displayImageFromArray(value) {
                             } else if (sideElementIndex == 1) {
                                 document.getElementById('image2').src = sideElement.src
                                 document.getElementById('image2').style.display = "block"
-                            }
-                            else if (sideElementIndex == 2) {
+                            } else if (sideElementIndex == 2) {
                                 document.getElementById('image3').src = sideElement.src
                                 document.getElementById('image3').style.display = "block"
-                            }
-                            else if (sideElementIndex == 3) {
+                            } else if (sideElementIndex == 3) {
                                 document.getElementById('image4').src = sideElement.src
                                 document.getElementById('image4').style.display = "block"
                             } else if (sideElementIndex == 4) {
@@ -138,7 +135,7 @@ function displayImageFromArray(value) {
 
 
     curImage.src = array[value].imageArray[0].src
-    array.forEach(function (element, elementIndex) {
+    array.forEach(function(element, elementIndex) {
         console.log(element)
     });
 
@@ -163,21 +160,21 @@ function changeImage(value) {
     imageArray.push({
         imagePath: '../images/bags/bag1.jpg',
     }, {
-            imagePath: '../images/bags/bag2.jpg',
-        }, {
-            imagePath: '../images/bags/bag3.jpg',
-        }, {
-            imagePath: '../images/bags/bag4.jpg',
-        }, {
-            imagePath: '../images/bags/bag5.jpg',
-        })
+        imagePath: '../images/bags/bag2.jpg',
+    }, {
+        imagePath: '../images/bags/bag3.jpg',
+    }, {
+        imagePath: '../images/bags/bag4.jpg',
+    }, {
+        imagePath: '../images/bags/bag5.jpg',
+    })
 
 
 
 
 
 
-    imageArray.forEach(function (element, elementIndex) {
+    imageArray.forEach(function(element, elementIndex) {
         newImageArray.push(element.imagePath)
     });
     var i = imageArray.length
@@ -200,9 +197,9 @@ function changeImage(value) {
 
 
 
-$(document).ready(function () {
+$(document).ready(function() {
 
-    $('.color-choose input').on('click', function () {
+    $('.color-choose input').on('click', function() {
         var headphonesColor = $(this).attr('data-image');
 
         $('.active').removeClass('active');
