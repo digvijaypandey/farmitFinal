@@ -1,5 +1,5 @@
-$(document).ready(function () {
-    $("#searchBtn").click(function () {
+$(document).ready(function() {
+    $("#searchBtn").click(function() {
         $('.search-container').slideToggle(1000);
     });
 });
@@ -15,15 +15,15 @@ function cancel() {
 }
 // byProduct
 
-$(document).ready(function () {
-    $(".showFeature").click(function () {
+$(document).ready(function() {
+    $(".showFeature").click(function() {
         $('.closeFeature').show();
         $('.bydescription').show(1000);
         $(".showFeature").hide();
     });
 });
-$(document).ready(function () {
-    $(".closeFeature").click(function () {
+$(document).ready(function() {
+    $(".closeFeature").click(function() {
         $('.closeFeature').hide();
         $('.bydescription').hide(1000);
         $(".showFeature").show();
@@ -33,9 +33,9 @@ $(document).ready(function () {
 //   color selectiion
 function selectColor(value) {
     if (value == 'Black') {
-        document.getElementById('images').src = 'images/bags/Front-Black.jpg'
+        document.getElementById('images').src = 'images/bags/Front-Black_buy.png'
     } else if (value == 'Gray') {
-        document.getElementById('images').src = 'images/bags/Front-Grey.jpg'
+        document.getElementById('images').src = 'images/bags/Front-Grey_buy.png'
         var imageElement = document.getElementById('images')
         imageElement.classList.add("cf2");
     }
@@ -43,8 +43,8 @@ function selectColor(value) {
 }
 
 
-$(document).ready(function () {
-    $('#topheader .navbar-nav a').on('click', function () {
+$(document).ready(function() {
+    $('#topheader .navbar-nav a').on('click', function() {
         $('#topheader .navbar-nav').find('li.active').removeClass('active');
         $(this).parent('li').addClass('active');
     });
